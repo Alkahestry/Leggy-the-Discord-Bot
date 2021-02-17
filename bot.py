@@ -31,7 +31,9 @@ async def n2_nine(ctx):
 
 @bot.command(name='handsome', help='Thu do dep trai cua ban.')
 async def _bot(ctx):
-    await ctx.send('Lai chang dep trai vl.')
+    content = 'Do dep trai cua ban: '
+    content += str(random.randint(0,100))
+    await ctx.send(content)
 
 # Basic Calculation
 @bot.command(name='sub')
